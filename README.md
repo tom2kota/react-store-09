@@ -4,6 +4,7 @@ E-commerce project DEMO:
 - [Client](https://react-store-09.vercel.app)
 - [Server](https://react-store-express-server.herokuapp.com)
 - [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard)
+- [Firebase](https://console.firebase.google.com)
 
 
 ``` 
