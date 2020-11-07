@@ -1,8 +1,19 @@
 # React Store App (react: 16.13.1) + Hooks
 
 E-commerce project DEMO:
-- [vercel.app link](https://react-store-09.vercel.app)
+- [Client](https://react-store-09.vercel.app)
+- [Server](https://react-store-express-server.herokuapp.com)
+- [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard)
 
+
+``` 
+    npm run start
+```
+
+Go to [localhost:3000](http://localhost:3000)
+
+
+![img](./public/payment.png)
 
 ---------------
 
