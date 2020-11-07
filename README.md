@@ -2,7 +2,7 @@
 
 E-commerce project DEMO:
 - [Client](https://react-store-09.vercel.app)
-- [Server](https://react-store-express-server.herokuapp.com) - Heroku error 500 - [repo + localhost](https://github.com/tom2kota/react-store-server)
+- [Server](https://react-store-express-server.herokuapp.com) or [Clone repo & run server on localhost](https://github.com/tom2kota/react-store-server)
 - [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard)
 - [Firebase](https://console.firebase.google.com)
 
