@@ -9,9 +9,11 @@ export const StripeCheckoutButton = ({price}) => {
 
     // POST request to backend API
     const onToken = token => {
+        // const urlDevelopment = 'http://localhost:5000/'
+        const urlProduction = 'https://react-store-express-server.herokuapp.com/'
         console.log('onToken ...', token)
         axios({
-            url: 'https://react-store-express-server.herokuapp.com/payment',
+            url: `${urlProduction}payment`,
             method: 'post',
             data: {
                 amount: priceForStripe,
