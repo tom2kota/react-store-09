@@ -1,14 +1,33 @@
-import React from "react";
-import StripeCheckout from "react-stripe-checkout";
+import React from "react"
+import axios from "axios"
+import StripeCheckout from "react-stripe-checkout"
 import imgLogo from './static/media/logo192.png'
 
 export const StripeCheckoutButton = ({price}) => {
     const priceForStripe = price * 100;
     const publicKey = 'pk_test_51HUdpkACECHr7zdXSvwikJSLZvvzenT76gVosm1ut8CR8r5n2c6VZA8V58p4MoWcMpxtztuOeo2poQ9xWESfUvuH00ETkLW0Xj';
+
+    // POST request to backend API
     const onToken = token => {
-        console.log(token);
-        alert('Payment Successful')
+        console.log('onToken ...', token)
+        axios({
+            url: 'https://react-store-express-server.herokuapp.com/payment',
+            method: 'post',
+            data: {
+                amount: priceForStripe,
+                token
+            }
+        }).then(response => {
+            console.log(response)
+            alert('Payment Successful')
+        }).catch(
+            error => {
+                console.log(error)
+                alert('Payment error')
+            }
+        )
     }
+
     return (
         <StripeCheckout
             label='&#x1F4B3; Pay with Stripe'
