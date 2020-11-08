@@ -1,4 +1,4 @@
-# React Store App (react: 16.13.1) + Hooks
+# React Store App (react: 16.14.0) + Hooks
 
 E-commerce project DEMO:
 - [Client](https://react-store-09.vercel.app)
